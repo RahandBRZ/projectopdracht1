@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filosofiepagina met de kernprincipes van Socrates</title>
+  <meta name="description" content="Filosofiepagina met de kernprincipes van Socrates: socratische methode, ken uzelf, kennis is deugd en bewustzijn van onwetendheid.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-inner" aria-label="Hoofdmenu">
+      <a class="logo" href="index.html">Socrates<span>.</span></a>
+      <button class="menu-knop" id="menuKnop" aria-expanded="false" aria-controls="menuList" aria-label="Menu openen">&#9776;</button>
+      <ul class="menu-list" id="menuList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="biografie.html">Biografie</a></li>
+        <li><a href="filosofie.html" class="actief" aria-current="page">Filosofie</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Kernprincipes van Socrates</h1>
+    <p>
+      Filosofiepagina met de kernprincipes van Socrates: vier ideeën die zijn denken
+      bepalen, elk met een voorbeeldvraag om zelf mee aan de slag te gaan.
+    </p>
+
+    <div class="kaartjes" id="kaartjes">
+      <article class="kaart" data-id="methode">
+        <h3>Socratische methode</h3>
+        <p>Niet vertellen, maar doorvragen: samen tot een beter antwoord komen.</p>
+        <button class="kaart-toggle" aria-expanded="false">Voorbeeldvragen</button>
+        <div class="meer">
+          <ul style="padding-left:1.25rem;">
+            <li>Wat bedoel je precies met "rechtvaardig"?</li>
+            <li>Geldt die regel ook voor je vijanden?</li>
+            <li>Waarom zou iemand die weten overtreden?</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="kaart" data-id="ken-uzelf">
+        <h3>Ken uzelf</h3>
+        <p>Zonder kennis van jezelf kun je geen goed leven leiden.</p>
+        <button class="kaart-toggle" aria-expanded="false">Voorbeeldvragen</button>
+        <div class="meer">
+          <ul style="padding-left:1.25rem;">
+            <li>Welke overtuiging heb je nooit getoetst?</li>
+            <li>Wat maakt jou tot wie je bent?</li>
+            <li>Welke eigenschap van jezelf negeer je het meest?</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="kaart" data-id="kennis-is-deugd">
+        <h3>Kennis is deugd</h3>
+        <p>Wie echt weet wat goed is, doet het goede &mdash; fouten komen uit onwetendheid.</p>
+        <button class="kaart-toggle" aria-expanded="false">Voorbeeldvragen</button>
+        <div class="meer">
+          <ul style="padding-left:1.25rem;">
+            <li>Kan iemand met opzet iets kwaads doen?</li>
+            <li>Wat zou je anders doen als je het écht wist?</li>
+            <li>Is een fout maken een keuze of een gebrek aan kennis?</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="kaart" data-id="onwetendheid">
+        <h3>Bewustzijn van onwetendheid</h3>
+        <p>De wijsheid van Socrates begon bij het toegeven: "Ik weet dat ik niets weet."</p>
+        <button class="kaart-toggle" aria-expanded="false">Voorbeeldvragen</button>
+        <div class="meer">
+          <ul style="padding-left:1.25rem;">
+            <li>Waarvan denk je dat je het zeker weet, maar is het niet?</li>
+            <li>Hoe weet je dat je het goed hebt?</li>
+            <li>Wat moet je nog leren om een beter mens te zijn?</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+
+    <section class="quiz" id="quiz">
+      <h2 style="margin-top:0;">Test je kennis</h2>
+      <p id="quizVraag">Klik op de knop voor een socratische vraag.</p>
+      <button class="knop" id="quizKnop" type="button">Toon vraag</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Socrates-website &middot; <a href="index.html">Terug naar home</a></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

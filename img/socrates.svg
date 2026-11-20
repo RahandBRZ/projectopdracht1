@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Illustratie van Socrates">
+  <defs>
+    <radialGradient id="achtergrond" cx="50%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#f3ead9"/>
+      <stop offset="100%" stop-color="#ddd0b8"/>
+    </radialGradient>
+    <linearGradient id="huid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e9dcc3"/>
+      <stop offset="100%" stop-color="#cbb894"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#achtergrond)"/>
+  <circle cx="200" cy="200" r="170" fill="none" stroke="#8b5e34" stroke-width="4" opacity="0.5"/>
+
+  <!-- nek en schouders -->
+  <path d="M155 300 q45 -35 90 0 l40 60 h-170 z" fill="#cbb894"/>
+  <!-- hoofd -->
+  <ellipse cx="200" cy="185" rx="88" ry="100" fill="url(#huid)"/>
+  <!-- voorhoofd -->
+  <path d="M118 165 q82 -70 164 0 q-82 -34 -164 0 z" fill="#b9a680" opacity="0.6"/>
+  <!-- baard -->
+  <path d="M128 215 q10 105 72 118 q62 -13 72 -118 q-20 60 -72 66 q-52 -6 -72 -66 z" fill="#efece4"/>
+  <path d="M140 235 q60 78 120 0 q-14 70 -60 78 q-46 -8 -60 -78 z" fill="#ffffff" opacity="0.7"/>
+  <!-- neus -->
+  <path d="M196 175 q-16 40 4 52 q14 -6 12 -24 z" fill="#c3ac86"/>
+  <!-- ogen -->
+  <ellipse cx="166" cy="172" rx="16" ry="9" fill="#fff"/>
+  <ellipse cx="234" cy="172" rx="16" ry="9" fill="#fff"/>
+  <circle cx="167" cy="173" r="5" fill="#3b2f22"/>
+  <circle cx="233" cy="173" r="5" fill="#3b2f22"/>
+      <!-- wenkbrauwen -->
+  <path d="M148 156 q18 -10 36 -2" stroke="#8a7a5c" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M216 154 q18 -8 36 2" stroke="#8a7a5c" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- mond (verborgen in baard) -->
+  <path d="M178 232 q22 12 44 0" stroke="#a88e6a" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- oren -->
+  <ellipse cx="113" cy="190" rx="12" ry="20" fill="#cbb894"/>
+  <ellipse cx="287" cy="190" rx="12" ry="20" fill="#cbb894"/>
+  <!-- kransen/haren -->
+  <path d="M115 160 q10 -85 85 -92 q75 7 85 92 q-30 -55 -85 -58 q-55 3 -85 58 z" fill="#efece4" opacity="0.9"/>
+</svg>

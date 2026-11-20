@@ -1,0 +1,392 @@
+/* =========================================================
+   Socrates-website – stylesheet
+   Responsive: mobile-first, breakpoints 480px en 1024px
+   ========================================================= */
+
+:root {
+  --kleur-bg: #fdfaf4;
+  --kleur-inkt: #2b2b2b;
+  --kleur-accent: #8b5e34;
+  --kleur-accent-dark: #6b4626;
+  --kleur-kaart: #ffffff;
+  --kleur-lijn: #e4dccf;
+  --max-breedte: 1024px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--kleur-bg);
+  color: var(--kleur-inkt);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--kleur-accent-dark);
+}
+
+/* ---------- Navigatie ---------- */
+
+.site-header {
+  background: var(--kleur-kaart);
+  border-bottom: 2px solid var(--kleur-lijn);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-inner {
+  max-width: var(--max-breedte);
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.logo {
+  font-size: 1.15rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--kleur-inkt);
+  letter-spacing: 0.02em;
+}
+
+.logo span {
+  color: var(--kleur-accent);
+}
+
+.menu-knop {
+  display: inline-block;
+  background: none;
+  border: 1px solid var(--kleur-lijn);
+  border-radius: 4px;
+  font-size: 1.4rem;
+  line-height: 1;
+  padding: 0.35rem 0.6rem;
+  cursor: pointer;
+  color: var(--kleur-inkt);
+}
+
+.menu-list {
+  list-style: none;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-top: 0.5rem;
+}
+
+.menu-list.open {
+  display: flex;
+}
+
+.menu-list a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: var(--kleur-inkt);
+  border-radius: 4px;
+}
+
+.menu-list a:hover,
+.menu-list a:focus {
+  background: var(--kleur-bg);
+}
+
+.menu-list a.actief {
+  background: var(--kleur-accent);
+  color: #fff;
+}
+
+/* ---------- Layout ---------- */
+
+main {
+  max-width: var(--max-breedte);
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+h1 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 2rem 0 0.75rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* ---------- Hero (homepagina) ---------- */
+
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: var(--kleur-kaart);
+  border: 1px solid var(--kleur-lijn);
+  border-radius: 8px;
+}
+
+.hero-citaat {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--kleur-accent-dark);
+  margin-bottom: 0.5rem;
+}
+
+.hero-afbeelding {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--kleur-accent);
+  margin: 1rem auto;
+  display: block;
+  background: #efe7d8;
+}
+
+.knoppen {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.knop {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  background: var(--kleur-accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.knop:hover,
+.knop:focus {
+  background: var(--kleur-accent-dark);
+}
+
+.knop.secundair {
+  background: transparent;
+  color: var(--kleur-accent-dark);
+  border: 2px solid var(--kleur-accent);
+}
+
+/* ---------- Tijdlijn (biografie) ---------- */
+
+.tijdlijn {
+  list-style: none;
+  margin: 1.5rem 0;
+  padding-left: 1.25rem;
+  border-left: 3px solid var(--kleur-accent);
+}
+
+.tijdlijn li {
+  position: relative;
+  padding: 0 0 1.5rem 1.25rem;
+}
+
+.tijdlijn li::before {
+  content: "";
+  position: absolute;
+  left: -1.56rem;
+  top: 0.35rem;
+  width: 14px;
+  height: 14px;
+  background: var(--kleur-accent);
+  border: 2px solid var(--kleur-bg);
+  border-radius: 50%;
+}
+
+.tijdlijn .jaar {
+  font-weight: bold;
+  color: var(--kleur-accent-dark);
+  display: block;
+}
+
+.portret {
+  display: block;
+  margin: 1rem auto;
+  width: 220px;
+  border-radius: 8px;
+  border: 1px solid var(--kleur-lijn);
+  background: #efe7d8;
+  cursor: zoom-in;
+}
+
+/* ---------- Kaartjes (filosofie) ---------- */
+
+.kaartjes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.kaart {
+  background: var(--kleur-kaart);
+  border: 1px solid var(--kleur-lijn);
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.kaart h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.kaart .meer {
+  display: none;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--kleur-lijn);
+}
+
+.kaart.open .meer {
+  display: block;
+}
+
+.kaart-toggle {
+  background: none;
+  border: 1px solid var(--kleur-accent);
+  color: var(--kleur-accent-dark);
+  border-radius: 4px;
+  padding: 0.35rem 0.8rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* ---------- Quiz (filosofie) ---------- */
+
+.quiz {
+  margin-top: 2rem;
+  background: var(--kleur-kaart);
+  border: 1px solid var(--kleur-lijn);
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  background: var(--kleur-inkt);
+  color: #f0ece4;
+  text-align: center;
+  padding: 1.25rem 1rem;
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: #e8c9a0;
+}
+
+/* =========================================================
+   Tablet: vanaf 480px
+   ========================================================= */
+@media (min-width: 480px) {
+  .knoppen {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .hero-citaat {
+    font-size: 1.8rem;
+  }
+}
+
+/* =========================================================
+   Desktop: vanaf 1024px – horizontaal menu, grid, 2 kolommen
+   ========================================================= */
+@media (min-width: 1024px) {
+  .menu-knop {
+    display: none;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 0.25rem;
+    padding-top: 0;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    text-align: left;
+    padding: 2.5rem;
+  }
+
+  .hero-afbeelding {
+    width: 260px;
+    height: 260px;
+    margin: 0 auto;
+  }
+
+  .hero .knoppen {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+  }
+
+  .biografie-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .kaartjes {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tijdlijn {
+    border-left: none;
+    border-top: 3px solid var(--kleur-accent);
+    padding-left: 0;
+    padding-top: 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .tijdlijn li {
+    padding: 1.25rem 0 0;
+  }
+
+  .tijdlijn li::before {
+    left: 0;
+    top: -1.9rem;
+  }
+}
